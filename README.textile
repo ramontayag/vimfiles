@@ -180,6 +180,14 @@ sudo make install
 More details can be found "here":http://kresimirbojcic.com/2011/05/14/installing-command-t-ubunutu-11.04-ruby-1.9.2.html
 Note that the options '--with-features=huge --enable-gui=gnome2' are not mentioned on the post above but they are necessary to also update the graphical version of vim (gvim).
 
+h2. Adding submodules
+
+If you want to add submodules, do something like
+
+pre. git submodule add git://path.to/repo.git bundle/directory_name
+
+Doing the above won’t install it yet though, you’ll need to call @git submodule update --init@ the same way you’re told to when you first install vimfiles.
+
 h2. Learn Vim
 
 Visit the following sites to learn more about Vim:
