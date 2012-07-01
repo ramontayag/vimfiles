@@ -430,7 +430,7 @@ let g:user_zen_settings = {
 imap {<CR> {}<ESC>i<CR><ESC>O
 
 " NERDTree settings
-nmap wm :NERDTree<cr>
+"nmap wm :NERDTree<cr>
 let NERDTreeIgnore=['\.swp$']
 
 nnoremap <Esc>A <up>
