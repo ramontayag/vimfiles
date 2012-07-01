@@ -449,3 +449,14 @@ set listchars=tab:▸\ ,eol:¬
 " Invisible character colors close to railscasts background color
 highlight NonText guifg=#3D3D3D
 highlight SpecialKey guifg=#3D3D3D
+
+if has("gui_mac") || has("gui_macvim")
+  " From https://groups.google.com/group/vim_mac/tree/browse_frm/month/2008-10/9590b373de73cf30?rnum=191&_done=%2Fgroup%2Fvim_mac%2Fbrowse_frm%2Fmonth%2F2008-10%3F
+  " Tell Rgrep not to use Xargs on Mac OS 'cause it sucks.
+  " Previously used has("mac"), except this doesn't work in
+  " a terminal, and fubars the grep.vim plugin
+  let s:os = system("uname")
+  if s:os =~ "Darwin"
+    let g:Grep_Xargs_Options='-0'
+  endif
+endif
