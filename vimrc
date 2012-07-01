@@ -441,3 +441,11 @@ inoremap <Esc>A <up>
 inoremap <Esc>B <down>
 inoremap <Esc>C <right>
 inoremap <Esc>D <left>
+
+" Show tab and end of line characters for text-mate like tab and end of line (eol) characters
+set list
+set listchars=tab:▸\ ,eol:¬
+
+" Invisible character colors close to railscasts background color
+highlight NonText guifg=#3D3D3D
+highlight SpecialKey guifg=#3D3D3D
