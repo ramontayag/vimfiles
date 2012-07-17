@@ -460,3 +460,9 @@ if has("gui_mac") || has("gui_macvim")
     let g:Grep_Xargs_Options='-0'
   endif
 endif
+
+" Assign ,n to show the current file in NERDTree
+nmap ,n :NERDTreeFind<CR>
+
+" Assign ,t to open up CommandT. This mapping is an alternative to the slower \t
+nmap ,t :CommandT<CR>
